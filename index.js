@@ -9,3 +9,7 @@ var expMin = RegExp("[a-z]")
 var expNum = RegExp("[0-9]")
 var exp
 
+formulario.addEventListener('submit',function(evento){
+    evento.preventDefault()
+    alert("Bienvenido"+document.getElementById('pass-login').value)
+})
