@@ -9,19 +9,19 @@
         <br><br>
         <form action="form-login">
             <label for="nombre-login">Nombre/Usuario</label>
-            <input type="text" id="nombre-login"/>
+            <input type="text" id="nombre-login" minlength="8" required/>
             <br>
             <br>
             <label for="email-login">Correo Electronico</label>
-            <input type="email" id="email-login">
+            <input type="email" id="email-login" required>
             <br>
             <br>
             <label for="fecha-nac">Fecha de Nacimiento</label>
-            <input type="date" id="fecha-nac">
+            <input type="date" id="fecha-nac"required>
             <br>
             <br>
             <label for="pass=login">Contraseña</label>
-            <input type="password" id="pass-login">
+            <input type="password" id="pass-login" minlength="8" required>
             <br>
             <br>
             <input type="submit" value="Iniciar Sesion"/>
