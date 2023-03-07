@@ -25,27 +25,13 @@ formulario.addEventListener('submit',function(evento){
         error += "Su Password debe tener una Mayuscula  "
     }if(!password.value.match(expNum)){
         error += "Su Password debe tener un Numero  "
+    }if(error ==""){
+        window.comunicacion.registroValido([nombre.value]);
+    }else{
+        alert(error)
     }
     
 
-    alert(error)
+    
 })
 
-
-
-
-/*formulario.addEventListener('submit',function(evento){
-    evento.preventDefault()
-
-    var error=""
-
-        if(!password.value.match(expMay)){
-            error += "Su Password debe tener una Mayuscula"
-        }else if(!password.value.match(expMin)){
-            error += "Su Password debe tener una Mayuscula"
-        }else if(!password.value.match(expNum)){
-            error += "Su Password debe tener un Numero"
-        }
-           
-        alert(error)
-    })*/
